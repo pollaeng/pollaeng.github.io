@@ -1,0 +1,17 @@
+.btn {
+  height: 40px;
+  background: linear-gradient(to bottom, #f53e10, white);
+  width: 90%;
+  margin: 15px 5px 15px 5px;
+  cursor: hand;
+  text-align: left;
+  padding: 0px 0px 0px 25px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  line-height: 40px;
+  box-shadow: 2px 3px 3px #666666;
+}
+
+.btn:hover{
+  box-shadow: 1px 1px 1px #666666;
+}
