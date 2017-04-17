@@ -1,0 +1,10 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/normalise";
+@import "partials/mixins";
+
+body{
+    background: teal;
+    font-size: 12px;
+    width: 800px;
+}
