@@ -36,7 +36,10 @@ body{
     background: linear-gradient(175deg, #f53e10, #d38143);
     padding: 10px;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-size: 1em;
+=======
+>>>>>>> origin/master
 }
 
 .middleBody{
@@ -51,10 +54,15 @@ body{
     display: flex;
     justify-content: flex-end;
     div{
+<<<<<<< HEAD
         font-size: 1em;
         color: silver;
         a{
             font-size: 1em;
+=======
+        color: silver;
+        a{
+>>>>>>> origin/master
             color: white;
             text-decoration: none;
         }
