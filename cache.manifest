@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# version 0.1
+CACHE:
+index.html
+CSSs/stylesheets/styles_Default.css
+images/person1.png
+
+NETWORK:
+*
