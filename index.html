@@ -19,7 +19,7 @@
       </a>
     </span>
 
-    <ul class="navbar-nav">
+    <ul class="navbar-nav" onclick="closeSlideMenu()">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Services</a></li>
@@ -34,22 +34,39 @@
     <a href="#">Services</a>
     <a href="#">Contact</a>
   </div>
-	<div>
-	Testing
-	</div>
-  <div id="main1">
+
+  <div id="main" 
+  onclick="closeSlideMenu()" 
+  onmousedown = "startSliding(event)" 
+  onmouseup="endSliding(event)">
     <h1>Responsive Side Menu</h1>
   </div>
 
   <script>
+  	var xPos = -1;
+  	var dragged = false;
     function openSlideMenu(){
       document.getElementById('side-menu').style.width = '250px';
-      document.getElementById('main').style.marginLeft = '250px';
+      //document.getElementById('main').style.marginLeft = '250px';
     }
 
     function closeSlideMenu(){
-      document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
+    if (! dragged) {
+       document.getElementById('side-menu').style.width = '0';   	
+    }
+		dragged = false;
+     //document.getElementById('main').style.marginLeft = '0';
+    }
+    function startSliding(event) {
+        xPos = event.clientX;
+    }
+    function endSliding(event) {
+    	var x  = event.clientX;
+    	if (x - 50 > xPos){
+    		dragged = true;
+    		openSlideMenu();
+    	}
+    	
     }
   </script>
 </body>
